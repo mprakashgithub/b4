@@ -10,13 +10,8 @@ class TrackUserRepo {
 
     try {
       var headers = {'Content-Type': 'application/json'};
-      var request = http.Request(
-          'POST', Uri.parse('https://www.callme4.com:8443/CM4API/Ususertrack'));
-      request.body = json.encode({
-        "user_id": "2047138078",
-        "name": "Narendra",
-        "contact_number": "919873643554"
-      });
+      var request = http.Request('POST', Uri.parse(' '));
+      request.body = json.encode({"user_id": "2047138078"});
       request.headers.addAll(headers);
 
       http.StreamedResponse response = await request.send();

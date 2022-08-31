@@ -13,8 +13,7 @@ class PopularCategoryRepo {
     try {
       List<PopularCategoryModel> list = [];
       var headers = {'Content-Type': 'application/json'};
-      var request = http.Request('POST',
-          Uri.parse('https://www.callme4.com:8443/CM4API/popularcategory'));
+      var request = http.Request('POST', Uri.parse(' '));
       request.body = json.encode({"uid": "1315698"});
       request.headers.addAll(headers);
 

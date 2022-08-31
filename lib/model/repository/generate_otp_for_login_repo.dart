@@ -15,7 +15,7 @@ class GenerateOtpForLoginRepo {
       var headers = {'Content-Type': 'text/plain'};
       var request = http.Request('POST', Uri.parse(url));
       request.body =
-          '''{"country_code":"1","mobile":$mobNo,"latitude":"28.5672318","longitude":"77.3809184","city":"Noida","state":"Uttar Pradesh","fcmToken":"c2gvKiyOhbk:APA91bF8lUQURPhAr55gNIhdVdvRri5OGtf2_8SjlPGeWpoDsLCycG8p_3JKjwjugBKcH_DBcqndvnXTHM5uKp2BoycSSd_lLD1m_rew-Ho8GRQTbprBIbFjqXNELabNuvs78JKXYQSh"}''';
+          '''{"country_code":"1","mobile":$mobNo,"latitude":"28.5672318","longitude":"77.3809184","city":"Noida","state":"Uttar Pradesh","fcmToken":" :token- "}''';
       request.headers.addAll(headers);
 
       http.StreamedResponse response = await request.send();

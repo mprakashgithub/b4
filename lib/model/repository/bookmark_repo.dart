@@ -12,8 +12,7 @@ class BookmarkRepo {
     print("Bookmark Repo: $url");
     try {
       var headers = {'Content-Type': 'application/json'};
-      var request = http.Request('POST',
-          Uri.parse('https://www.callme4.com:8443/CM4API/Usmarkfavourite'));
+      var request = http.Request('POST', Uri.parse(' '));
       request.body =
           json.encode({"uid": "1315698", "bookmarkPersonId": "1299155"});
       request.headers.addAll(headers);

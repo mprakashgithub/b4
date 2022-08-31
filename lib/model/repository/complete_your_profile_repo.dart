@@ -23,14 +23,7 @@ class CompleteYourProfileRepo {
     try {
       var headers = BaseRepo.baseHeader;
       var request = http.Request('POST', Uri.parse(url));
-      request.body = json.encode({
-        "fullName": "M Prakash",
-        "userName": "mprakash1@cm4",
-        "uid": "1315698",
-        "callrate": "7",
-        "listOfProfession": "",
-        "prize_money": "0.4"
-      });
+      request.body = json.encode({"fullName": "M Prakash"});
       request.headers.addAll(headers);
 
       http.StreamedResponse response = await request.send();

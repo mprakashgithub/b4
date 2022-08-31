@@ -15,8 +15,7 @@ class TrendingConsultantsRepo {
     try {
       List<TrendingConsultantsModel> list = [];
       var headers = {'Content-Type': 'application/json'};
-      var request = http.Request('POST',
-          Uri.parse('https://www.callme4.com:8443/CM4API/usdashboardview'));
+      var request = http.Request('POST', Uri.parse(' '));
       request.body = json.encode(
           {"designtype": "3", "limit": "30", "offset": 0, "uid": "1304492"});
       request.headers.addAll(headers);
